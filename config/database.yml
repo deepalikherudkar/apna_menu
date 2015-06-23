@@ -1,11 +1,12 @@
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   username: root
   password:
   timeout: 5000
 
 development:
   <<: *default
+  adapter: sqlite
   database: apna_menu
 
 test:
